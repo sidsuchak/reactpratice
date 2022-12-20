@@ -8,13 +8,14 @@ import { Component } from 'react';
 // import TableExample from './components/TableExample';
 // import ButtonClick from './components/ButtonClick';
 // import Message from './components/Message';
-import Counter from './components/counter';
+// import Counter from './components/counter';
+import FunctionClick from './components/FunctionClick';
 
 class App extends Component {
   render(){
     return (
       <div className="App">
-        <Counter/>
+        {/* <Counter/> */}
         {/* <Welcome/> */}
         {/* <Greet name='Sid' nameType='FirstName'>
           <p>Children props</p>
@@ -27,7 +28,7 @@ class App extends Component {
         {/* <ButtonClick/>
         <div id="testButton"></div> */}
 
-
+        <FunctionClick/>
 
       </div>
     );
