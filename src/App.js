@@ -9,7 +9,8 @@ import { Component } from 'react';
 // import ButtonClick from './components/ButtonClick';
 // import Message from './components/Message';
 // import Counter from './components/counter';
-import FunctionClick from './components/FunctionClick';
+// import FunctionClick from './components/FunctionClick';
+import EventBind from './components/EventBind';
 
 class App extends Component {
   render(){
@@ -28,7 +29,7 @@ class App extends Component {
         {/* <ButtonClick/>
         <div id="testButton"></div> */}
 
-        <FunctionClick/>
+        <EventBind/>
 
       </div>
     );
