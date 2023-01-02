@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import EventBind from './components/EventBind';
+// import EventBind from './components/EventBind';
+import Parent from './components/Parent';
 // import { render } from '@testing-library/react';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -16,6 +17,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
+        <Parent/>
         {/* <Counter/> */}
         {/* <Welcome/> */}
         {/* <Greet name='Sid' nameType='FirstName'>
@@ -30,7 +32,7 @@ class App extends Component {
         <div id="testButton"></div> */}
 
         {/* <FunctionClick/> */}
-        <EventBind/>
+        {/* <EventBind/> */}
 
       </div>
     );
