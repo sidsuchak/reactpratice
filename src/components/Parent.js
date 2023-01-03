@@ -11,8 +11,8 @@ constructor(props) {
   }
   this.greetParent = this.greetParent.bind(this)
 }
-      greetParent(){
-        alert(`Hello ${this.state.parentName}`)
+      greetParent(childName){
+        alert(`Hello ${this.state.parentName} from ${childName}`)
       }
 
 

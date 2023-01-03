@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Child() {
+function Child(props) {
 
   return (
     <div>
-      <button>Greet parent</button>
+      <button onClick={()=>props.greetHandler('child')}>Greet parent</button>
     </div>
   )
 }
