@@ -2,7 +2,8 @@
 import './App.css';
 import { Component } from 'react';
 // import EventBind from './components/EventBind';
-import Parent from './components/Parent';
+// import Parent from './components/Parent';
+import GreetFile from './components/GreetFile';
 // import { render } from '@testing-library/react';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -17,7 +18,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Parent/>
+        {/* <Parent/> */}
         {/* <Counter/> */}
         {/* <Welcome/> */}
         {/* <Greet name='Sid' nameType='FirstName'>
@@ -33,6 +34,9 @@ class App extends Component {
 
         {/* <FunctionClick/> */}
         {/* <EventBind/> */}
+
+
+      <GreetFile/>
 
       </div>
     );
