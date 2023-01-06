@@ -37,6 +37,7 @@ class GreetFile extends Component {
     return(
         this.state.isLoggedIn ? <div>Welcome my brother</div> : <div>Sorry logged out</div>
     )
+
   }
 }
 
