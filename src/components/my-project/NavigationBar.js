@@ -6,27 +6,34 @@ function NavigationBar() {
   const arr = [
     {
       id: 1,
-      name: 'HOME'
+      name: 'HOME',
+      count: 0
     },
     {
       id: 2,
-      name: 'ABOUT US'
+      name: 'ABOUT US',
+      count: 0
     },
     {
       id: 3,
-      name: 'CONTACT US'
+      name: 'CONTACT US',
+      count: 0
     },
     {
       id: 4,
-      name: 'PRICING'
+      name: 'PRICING',
+      count: 0
     }
   ]
   
     const [textMsg, setTextMsg] = useState('Click on a button to see where you are');
     const msgs = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
+    const countmsgs = [arr[0].count,arr[1].count,arr[2].count,arr[3].count]
 
+    
     function buttonClick(index){
-      setTextMsg('Welcome to ' + msgs[index] + ', you came here times')
+      countmsgs[index] = countmsgs[index] + 1
+      setTextMsg('Welcome to ' + msgs[index] + ', you came here '+countmsgs[index]+' times')
     }
 
   return (
