@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
+import NavigationBar from './components/my-project/NavigationBar';
 // import EventBind from './components/EventBind';
 // import Parent from './components/Parent';
 // import GreetFile from './components/GreetFile';
-import NameList from './components/NameList';
+// import NameList from './components/NameList';
 // import { render } from '@testing-library/react';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -39,7 +40,9 @@ class App extends Component {
 
       {/* <GreetFile/> */}
 
-      <NameList/>
+      {/* <NameList/> */}
+
+      <NavigationBar/>
 
       </div>
     );
