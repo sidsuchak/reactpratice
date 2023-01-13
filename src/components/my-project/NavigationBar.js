@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import './Navigation.css'
+import React, { useRef, useState } from 'react'
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import "./Navigation.css"
+
 
 function NavigationBar() {
-
-  const arr = [
+    const arr = [
     {
       id: 1,
       name: 'HOME',
@@ -25,27 +26,30 @@ function NavigationBar() {
       count: 0
     }
   ]
-  
-    const [textMsg, setTextMsg] = useState('Click on a button to see where you are');
-    const msgs = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
-    const countmsgs = [arr[0].count,arr[1].count,arr[2].count,arr[3].count]
 
-    
-    function buttonClick(index){
-      countmsgs[index] = countmsgs[index] + 1
-      setTextMsg('Welcome to ' + msgs[index] + ', you came here '+countmsgs[index]+' times')
-    }
+  const [textMsg, setTextMsg] = useState('Click somewhere to see where you are')
+  let countText = useRef(0)
+
+  function navClick(index){
+    countText = arr[index].count + 1
+    setTextMsg('Welcome to '+arr[index].name+', you came here '+countText[index]+' times')
+  }
 
   return (
-    <div>
-      <button key={arr[0].id} className='navbuttoncss' onClick={()=> buttonClick(0)}>{arr[0].name}</button>
-      <button key={arr[1].id} className='navbuttoncss' onClick={()=> buttonClick(1)}>{arr[1].name}</button>
-      <button key={arr[2].id} className='navbuttoncss' onClick={()=> buttonClick(2)}>{arr[2].name}</button>
-      <button key={arr[3].id} className='navbuttoncss' onClick={()=> buttonClick(3)}>{arr[3].name}</button>      
+    <>
+      <Navbar bg='dark' variant='dark'>
+        <Container>
+          <Nav className='navList'>
+            {
+              arr.map(
+                (item, index)=> <Nav.Item onClick={()=>{navClick(index)}} className='navbuttoncss'>{item.name}</Nav.Item>)
+            }
+          </Nav>
+        </Container>
+      </Navbar>
 
-      <p>{textMsg}</p>
-      
-    </div>
+      <h2>{textMsg}</h2>
+    </>
   )
 }
 

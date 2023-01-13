@@ -1,6 +1,11 @@
 .navbuttoncss{
-    margin-right: 50px;
-    color:rebeccapurple;
-    background-color: aliceblue;
-    padding: 20px
+    
+    color:white;
+    cursor: pointer;
+}
+.navList
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }

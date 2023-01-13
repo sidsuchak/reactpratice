@@ -2,6 +2,8 @@
 import './App.css';
 import { Component } from 'react';
 import NavigationBar from './components/my-project/NavigationBar';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // import EventBind from './components/EventBind';
 // import Parent from './components/Parent';
 // import GreetFile from './components/GreetFile';
