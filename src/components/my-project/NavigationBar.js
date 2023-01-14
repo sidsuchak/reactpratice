@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import "./Navigation.css"
 
@@ -28,11 +28,12 @@ function NavigationBar() {
   ]
 
   const [textMsg, setTextMsg] = useState('Click somewhere to see where you are')
-  let countText = useRef(0)
+  const [count, setCount] = useState(0)
 
   function navClick(index){
-    countText = arr[index].count + 1
-    setTextMsg('Welcome to '+arr[index].name+', you came here '+countText[index]+' times')
+    setCount(count+1)
+    arr[index].count = count + 1;
+    setTextMsg('Welcome to '+arr[index].name+', you came here '+count+' times')
   }
 
   return (
@@ -42,7 +43,7 @@ function NavigationBar() {
           <Nav className='navList'>
             {
               arr.map(
-                (item, index)=> <Nav.Item onClick={()=>{navClick(index)}} className='navbuttoncss'>{item.name}</Nav.Item>)
+                (item, index)=> <Nav.Item key={item.id} onClick={()=>{navClick(index)}} className='navbuttoncss'>{item.name}</Nav.Item>)
             }
           </Nav>
         </Container>
