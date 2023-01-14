@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import NavigationBar from './components/my-project/NavigationBar';
+// import NavigationBar from './components/my-project/NavigationBar';
 import "bootstrap/dist/css/bootstrap.min.css";
+// import { Form } from 'react-bootstrap';
+import FormContent from './components/my-project/RegistrationForm';
 
 // import EventBind from './components/EventBind';
 // import Parent from './components/Parent';
@@ -44,7 +46,13 @@ class App extends Component {
 
       {/* <NameList/> */}
 
-      <NavigationBar/>
+      {/* <NavigationBar/> */}
+      {/* <Form/> */}
+
+
+      <FormContent/>
+
+
 
       </div>
     );
