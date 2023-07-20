@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import { Form } from 'react-bootstrap';
 // import RegistrationForm from './components/my-project/RegistrationForm';
 // import AxiosExample from './components/AxiosExample';
-import Importcsv from './components/my-project/importcsv';
 
 // import EventBind from './components/EventBind';
 // import Parent from './components/Parent';
@@ -15,7 +14,7 @@ import Importcsv from './components/my-project/importcsv';
 // import { render } from '@testing-library/react';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
-// import Hello from './components/Hello';
+import Hello from './components/Hello';
 // import TableExample from './components/TableExample';
 // import ButtonClick from './components/ButtonClick';
 // import Message from './components/Message';
@@ -34,7 +33,7 @@ class App extends Component {
         </Greet>
         <Greet name='Mahi' nameType='middleName'/>
         <Greet name='Suchak' nameType='lastName'/> */}
-        {/* <Hello></Hello> */}
+        <Hello/>
 
         {/* <Message/> */}
         {/* <ButtonClick/>
@@ -53,7 +52,7 @@ class App extends Component {
 
 
       {/* <RegistrationForm/> */}
-      <Importcsv/>
+      {/* <Parent/> */}
 
 
       </div>

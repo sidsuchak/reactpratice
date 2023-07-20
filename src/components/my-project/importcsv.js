@@ -6,8 +6,8 @@ export default function Importcsv() {
       <input
         type="file"
         accept=".csv,.xlsx,.xls"
-        onChange={(e) => {
-          const files = e.target.files;
+        onChange={(file) => {
+          const files = file.target.files;
           console.log(files);
           if (files) {
             console.log(files[0]);
