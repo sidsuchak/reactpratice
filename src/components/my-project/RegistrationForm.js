@@ -86,7 +86,7 @@ function RegistrationForm(props) {
       centered
     >
     <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title style={{alignContent: 'center'}} id="contained-modal-title-vcenter">
         Registration Form
         </Modal.Title>
       </Modal.Header>
