@@ -3,8 +3,9 @@ import './App.css';
 import { Component } from 'react';
 // import NavigationBar from './components/my-project/NavigationBar';
 import "bootstrap/dist/css/bootstrap.min.css";
+// import RegistrationForm from './components/my-project/RegistrationForm'
 // import { Form } from 'react-bootstrap';
-import RegistrationForm from './components/my-project/RegistrationForm';
+
 // import AxiosExample from './components/AxiosExample';
 
 // import EventBind from './components/EventBind';
@@ -21,10 +22,12 @@ import RegistrationForm from './components/my-project/RegistrationForm';
 // import Counter from './components/counter';
 // import FunctionClick from './components/FunctionClick';
 
+import MusicPlayer from './components/my-project/MusicPlayer';
+
 class App extends Component {
   render(){
     return (
-      <div className="App">
+      <div style={{backgroundColor: 'black', height: 1000}} className="App">
         
         {/* <Parent/> */}
         {/* <Counter/> */}
@@ -52,7 +55,8 @@ class App extends Component {
       {/* <Form/> */}
 
 
-      <RegistrationForm/>
+      {/* <RegistrationForm/> */}
+      <MusicPlayer/>
       {/* <Parent/> */}
 
 
